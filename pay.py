@@ -9,7 +9,7 @@ dp = Dispatcher()
 async def order1(call: types.CallbackQuery, bot: Bot):
     await bot.send_invoice(call.from_user.id,
                            title="iPhone 14 Pro",
-                           description="iPhone 14 Pro max 256GB Deep Purple Smartfoni",
+                           description="iPhone 14 Pro max 256GB Deep Purple",
                            provider_token=PAYMENT_TOKEN,
                            currency='UZS',
                            photo_url="https://images.uzum.uz/ck9sgvbk9fq1var6o9h0/original.jpg",
