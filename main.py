@@ -61,6 +61,32 @@ async def cmd_start(message: types.Message):
                          reply_markup=menu)
 
 
+@dp.message(F.text == "Profil")
+async def cmd_start(message: types.Message):
+    await message.answer(f"""Xurmatli {message.from_user.full_name}!\nSizning profilingiz:
+Sizning FI : {message.from_user.full_name},
+Sizning id yingiz : {message.from_user.id},
+Sizning user ismingiz : {message.from_user.username}""",
+                         reply_markup=menu)
+
+
+@dp.message(F.text == "Admin")
+async def cmd_start(message: types.Message):
+    if message.from_user.id != Admin_ID:
+        await message.answer(f"""Xurmatli {message.from_user.full_name}!\nSizning profilingiz:
+    Sizning FI : {message.from_user.full_name},
+    Sizning id yingiz : {message.from_user.id},
+    Sizning user ismingiz : {message.from_user.username}""",
+                             reply_markup=menu)
+    else:
+        await message.answer("Siz admin ekansiz!")
+
+
+@dp.message(F.text == "Depozit")
+async def cmd_start(message: types.Message):
+    await message.answer("Tez orada 🕶")
+
+
 dp.callback_query.register(order1, F.data == "Tolov")
 dp.callback_query.register(order2, F.data == "Tolov1")
 dp.callback_query.register(order3, F.data == "Tolov2")
