@@ -20,7 +20,7 @@ async def order1(call: types.CallbackQuery, bot: Bot):
                            prices=[
                                LabeledPrice(label="Narxi", amount=17_990_000),
                                LabeledPrice(label="QQS", amount=2_023_875),
-                               LabeledPrice(label="Chegirma", amount=-10_000)
+                               LabeledPrice(label="Chegirma", amount=-4_010_000)
                            ],
                            start_parameter='time-machine-example',
                            payload='some-invoice-payload-for-our-internal-use',
@@ -42,7 +42,7 @@ async def order2(call: types.CallbackQuery, bot: Bot):
                            prices=[
                                LabeledPrice(label="Narxi", amount=12_299_000),
                                LabeledPrice(label="QQS", amount=1_383_637),
-                               LabeledPrice(label="Chegirma", amount=-401_000)
+                               LabeledPrice(label="Chegirma", amount=-4_401_000)
                            ],
                            start_parameter='time-machine-example',
                            payload='some-invoice-payload-for-our-internal-use',
@@ -64,7 +64,7 @@ async def order3(call: types.CallbackQuery, bot: Bot):
                            prices=[
                                LabeledPrice(label="Narxi", amount=12_299_000),
                                LabeledPrice(label="QQS", amount=1_461_375),
-                               LabeledPrice(label="Chegirma", amount=-691_000)
+                               LabeledPrice(label="Chegirma", amount=-3_691_000)
                            ],
                            start_parameter='time-machine-example',
                            payload='some-invoice-payload-for-our-internal-use',
